@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Good Vibes Form</title>
+</head>
+<body>
+
+
+
+    <div id="id_form">
+
+        <h1 style="color:blue;" id="id_heading_1">Good Vibes Form</h1>
+
+        <p>Tell us something <em>POSITIVE</em> that happened to you today.</p>
+
+        <form action="thankyouindex.html" method="post"  autocomplete="off">  <!--autocomplete off for all form fields-->
+
+            <label for="name">Name *: </label>
+            <input type="text"  required name="name" id="id_name" placeholder="Enter your name">
+
+            <br>
+            <br>
+          
+
+            <label for="email">Email *:</label>
+            <input type="email" required name="email" id="id_email" placeholder="Enter your email address">
+
+            <br>
+            <br>
+
+            <label for="the_scale">On a scale 1-10, how good was it? </label>
+            <input type="number" required name="the_scale" id="id_the_scale" min="1" max="10" step="1">
+
+            <br>
+            <br>
+
+            <label for="where">Where did it happen? :</label>
+
+            <select id="where" name="where">
+                <option value="Home">At Home</option>
+                <option value="School">At School</option>
+                <option value="Work">At Work</option>
+                <option value="Nowhere">Nowhere! Just in my mind :)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="when">At what time of day did it happen? :</label><br>
+            <br>
+            <input type="radio" id="morning" name="when" value="morning">
+            <label for="morning">Morning</label><br>
+            <input type="radio" id="afternoon" name="when" value="afternoon">
+            <label for="afternoon">Afternoon</label><br>
+            <input type="radio" id="evening" name="when" value="evening">
+            <label for="evening">Evening</label><br>
+        
+
+            <br>
+            <br>
+
+            <label for="emotions">What emotions did you experience? :<br>(Select all that apply)</label><br>
+            <br>
+
+            <input type="checkbox" id="id_emotion1" name="emotion1" value="excited">
+            <label for="emotion1"> Excited</label><br>
+
+            <input type="checkbox" id="id_emotion2" name="emotion2" value="humbled">
+            <label for="emotion2"> Humbled</label><br>
+
+            <input type="checkbox" id="id_emotion3" name="emotion3" value="elated">
+            <label for="emotion3"> Elated</label><br>
+
+            <input type="checkbox" id="id_emotion4" name="emotion4" value="loved">
+            <label for="emotion4"> Loved</label><br>
+
+            <input type="checkbox" id="id_emotion5" name="emotion5" value="enthusiastic">
+            <label for="emotion5"> Enthusiastic</label><br>
+
+            <br>
+            <br>
+
+
+            <label for="age_range">Please choose your age range: </label>
+            <input list="age_ranges" name="age_range">
+            <datalist id="age_ranges">
+              <option value="18-25">
+              <option value="26-30">
+              <option value="31-40">
+              <option value="41-50">
+              <option value="51-100">
+            </datalist>
+
+
+            <br>
+            <br>
+            
+            <label for="comments">Please describe your <em>positive</em> experience? : </label>
+            <textarea type="text" placeholder="Enter your experience here..." required name="comments" id="id_comments" ></textarea>
+
+        
+            <br>
+            <br>
+
+            <input type="submit" value="Submit">
+
+
+        </form>
+
+
+    </div>
+    
+</body>
+
+<!-- FYI: User story 1- "required" applied :)
+     User story 2- dropdown list with range for age - is applied :)   link is here : https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_datalist
+     User story 3- No autocomplete applied :) The link : https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_autocomplete
+    
+     and placeholders are applied too!
+    -->
+</html>
+

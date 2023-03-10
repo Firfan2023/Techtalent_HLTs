@@ -1,0 +1,170 @@
+
+
+body {
+  padding-top: 150px;
+  margin:0;
+  background-color: #5d9999;
+}
+
+
+
+nav h1{
+  font-size: xx-large;
+}
+
+header {                                    /* Responsive CSS applied, fixed nav inside the header */
+    background-color: #d87093;
+    padding: 40px;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  header h1 {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  header a {
+    float: left;
+    display: block;
+    color: #ddd0d0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  
+  header a:hover {
+    background: #5d9999;
+    color: #050505;
+    border-radius: 12px;
+  }
+
+  
+  header, nav, a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    padding: 7px 20px;
+    text-decoration: none;
+  }
+
+main h2 {
+  
+    font-size: x-large;
+    padding: 20px 0 0 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  
+main p  {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+  }
+  
+
+hr {border-style: none;
+    border-top-style: dotted;
+    border-color: rgb(160, 24, 24);
+    border-width: 5px;
+    width: 5%;
+   
+}
+
+button {
+
+  background-color: #4CAF50; 
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 3px 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button {
+  background-color: lightgrey; 
+  color: black; 
+  border: 2px solid #b83a4b;
+}
+
+button:hover {
+  background-color: #af4c66;
+  color: white;
+}
+
+
+.buket h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* about page class and ids*/
+#about {                  
+  padding: 40px;
+  text-align: center;
+
+}
+
+.info {
+  text-align: center;
+  padding: 50px;
+
+}
+
+#interior {
+
+  border-radius: 30px;   /* user story 2 - rounded corners applied */
+}
+
+
+
+/*contact page and order form ids and classes*/
+#centering {
+  text-align: center;
+
+}
+
+.form{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#submit {
+  width: 100px;
+  height: 60px;
+  border-radius: 12px;   /* user story 2 - rounded corners applied */
+
+}
+
+/*products page classes*/
+
+.grid-container {
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>New Entry Form</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" href="favicon_gf.ico">
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>Gluten Free Recipes Blog</h1>
+        <button id="toggle-btn">Toggle Mode</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="homeindex.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+    <h1 id="netitle">New Entry for Recipe Suggestion</h1>
+
+    <main>
+        <form id="blogForm">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
+
+            <label for="entry">Entry:</label>
+            <textarea id="entry" name="entry" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <div id="blog"></div>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Food Blog. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

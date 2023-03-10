@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Random Response Generator</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <h1>Random Response Generator</h1>
+
+        <label for="username">What is your name?</label>
+        <input type="text" id="username"> 
+
+        <br>
+
+        <label for="question">What is your question?</label>
+        <input type="text" id="question">
+
+        <br>
+
+        <button id="convert-btn" onclick="generateAnswer()">Get Your Answer</button>
+
+        <br>
+
+        <p id="answer"></p> 
+
+        <div id="ask-again" style="display:none;">
+
+            <p><b>Would you like to ask another question?</b></p>
+
+            <button id="yes-btn" onclick="askAnother()">Yes</button>
+            <button id="no-btn" onclick="showFeeling()">No</button>
+
+        </div>
+
+        <div id="feeling" style="display:none;">
+
+            <p><b>How are you feeling? (1-10)</b></p>
+
+            <input type="number" id="feeling-rating" min="1" max="10">
+            <button id="feeling-btn" onclick="rateFeeling()">Submit</button>
+            
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

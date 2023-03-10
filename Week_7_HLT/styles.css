@@ -1,0 +1,190 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #94bfbe;
+  color: #333;
+  margin: 0;
+}
+
+header {
+  background-color: #28666e;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  background-color: #dff8eb;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+nav li a {
+  display: block;
+  padding: 10
+}
+
+nav li a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+section {
+  flex: 1;
+  margin: 20px;
+  max-width: 600px;
+}
+
+article {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+article h3 {
+  margin-top: 0;
+}
+
+article p {
+  margin-bottom: 10px;
+}
+
+article a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+article a:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+footer {
+  background-color: #28666e;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+#toggle-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode header {
+  background-color: #fff;
+  color: #333;
+}
+
+.dark-mode nav {
+  background-color: #ccc;
+}
+
+.dark-mode nav li a {
+  color: #fff;
+  font-weight: normal;
+}
+
+.dark-mode nav li a:hover {
+  color: #333;
+  background-color: #fff;
+}
+
+.dark-mode article {
+ 
+  border-color: #fff;
+}
+
+.dark-mode article a {
+  
+  color: #fff;
+}
+
+.dark-mode article a:hover {
+ 
+  color: #333;
+  background-color: #fff;
+}
+
+.dark-mode footer {
+  background-color: #fff;
+  color: #333;
+}
+
+
+#mission {
+
+  margin: 0px 0px 0px 200px;
+ 
+}
+
+.recipe{
+  margin: 0 0 0 0;
+  position: relative;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+input, textarea {
+  display: block;
+  margin-top: 5px;
+  margin-left: 0px;
+}
+
+#netitle{
+
+margin-left: 300px;
+}
+
+
+hr {
+  border-color: rgb(14, 129, 150);
+  border-width: 10px;
+  width: 100%;
+}

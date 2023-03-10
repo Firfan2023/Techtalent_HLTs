@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="faviconbouquet.ico">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Order Form</title>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <h1><em>Bouquet Boutique</em></h1>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+
+
+    </header>
+
+
+
+    <main class="form">
+
+        <div id="centering">
+
+            <h1 style="color: rgb(145, 25, 67);">Welcome to Your Cart</h1>
+
+            <p>Tell us more about your <em>ORDER.</em></p>
+
+            <h2>DELIVERY ADDRESS DETAILS</h2>
+
+            <form action="thanksindex.html" method="post" autocomplete="off">
+                <!--autocomplete off for all form fields-->
+
+                <label for="name">Name *: </label>
+                <input type="text" required name="name" id="id_name" placeholder="Enter your name">
+
+                <br>
+                <br>
+
+
+                <label for="email">Email *:</label>
+                <input type="email" required name="email" id="id_email" placeholder="Enter your email address">
+
+                <br>
+                <br>
+
+                <label for="the_scale">How many Bouquets are you ordering? </label>
+                <input type="number" required name="the_scale" id="id_the_scale" min="1" max="10" step="1">
+
+                <br>
+                <br>
+
+                <label for="where">Where to delivery? :</label>
+
+                <select id="where" name="where">
+                    <option value="Home">Home Address</option>
+                    <option value="School">Work Address</option>
+                    <option value="Work">Gift Address</option>
+                </select>
+
+                <br>
+                <br>
+
+                <label for="delivery_address"> Please write the delivery address:</label><br>
+                <br>
+
+                <textarea type="text" placeholder="Enter the address info here..." required name="delivery_address"
+                    rows="10" cols="30" id="id_deliveryaddress"></textarea><br>
+
+                <br>
+                <br>
+
+                <label for="when">At what time of day should be delivered? :</label><br>
+                <br>
+                <input type="radio" id="morning" name="when" value="morning">
+                <label for="morning">Morning</label><br>
+                <input type="radio" id="afternoon" name="when" value="afternoon">
+                <label for="afternoon">Afternoon</label><br>
+                <input type="radio" id="evening" name="when" value="evening">
+                <label for="evening">Evening</label><br>
+
+                <br>
+                <br>
+
+                <label for="slot_range">Please choose a delivery slot: </label>
+                <input list="slot_ranges" name="slot_range">
+                <datalist id="slot_ranges">
+
+                    <option value="08:00 - 11:00 am">
+                    <option value="13:00 - 16:00 pm">
+                    <option value="18:00 - 22:00 pm">
+
+                </datalist>
+
+
+                <br>
+                <br>
+
+                <label for="comments">Please add your notes : </label>
+                <textarea type="text" placeholder="Enter your note here..." required name="comments"
+                    id="id_comments"></textarea>
+
+
+                <br>
+                <br>
+
+                <h2>PAYMENT DETAILS</h2>
+
+                <label for="card-name">Name on card:</label>
+                <input type="text" id="card-name" name="card-name" required>
+                <br>
+                <label for="card-number">Card number:</label>
+                <input type="text" id="card-number" name="card-number" required>
+                <br>
+                <label for="expiry-date">Expiry date:</label>
+                <input type="text" id="expiry-date" name="expiry-date" required>
+                <br>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+
+
+                <br>
+                <br>
+
+              
+                <input type="submit" value="Submit" id="submit">
+
+
+            </form>
+
+
+        </div>
+
+
+
+    </main>
+
+
+</body>
+
+</html>
